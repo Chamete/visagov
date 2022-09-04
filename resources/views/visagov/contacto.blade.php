@@ -1,7 +1,7 @@
 @extends('app');
 
 @section('content')
-<div  style="padding: 10" >
+<div  style="padding-left: 200; padding-right: 200; padding-top: 50" >
     <h1>Contacto</h1>
     <form>
         @csrf

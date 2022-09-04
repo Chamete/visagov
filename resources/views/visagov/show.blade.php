@@ -1,7 +1,7 @@
 @extends('app');
 
 @section('content')
-    <div style="padding: 10">
+    <div style="padding-left: 200; padding-right: 200; padding-top: 50">
         <h1>Libro</h1>
         <!-- Modal -->
         <form action="{{ route('libros-update', ['id' => $libro->id]) }}" method="POST">
@@ -21,8 +21,9 @@
                                 <input style="width: 100%" id=autor type="text" name="author"  required minlength="3" value="{{ $libro->author }}">
                         </div>
                         <div>
-                            <button type="submit" style="margin-top: 10" class="btn btn-primary">Actualizar</button>
-                            <a class="btn btn-primary" style="margin-top: 10" href="{{ url()->previous() }}">Volver</a>
+                            <a style="float: right; margin-top: 10" class="btn btn-primary" style="margin-top: 10" href="{{ url()->previous() }}">Volver</a>
+                            <button style="float: right; margin-top: 10; margin-right: 5" type="submit" style="margin-top: 10" class="btn btn-primary">Actualizar</button>
+
                         </div>
                     </div>
                 </div>

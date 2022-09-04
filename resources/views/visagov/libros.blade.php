@@ -1,7 +1,7 @@
 @extends('app');
 
 @section('content')
-    <div style="padding: 10">
+    <div style="padding-left: 100; padding-right: 100; padding-top: 50">
         <h1>Libros</h1>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">

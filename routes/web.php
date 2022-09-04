@@ -3,6 +3,7 @@
 use App\Models\Book;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BooksController;
+use config\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,10 +40,11 @@ Route::get('/libros/{id}', [BooksController::class, 'show'])->name('libros-edit'
 Route::patch('/libros/{id}', [BooksController::class, 'update'])->name('libros-update');
 Route::delete('/libros/{id}', [BooksController::class, 'destroy'])->name('libros-destroy');
 
-
 Route::get('/contacto', function () {
     return view('visagov.contacto');
 });
+
+
 
 
 
